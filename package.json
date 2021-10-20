@@ -5,16 +5,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node server.js"
+    "dev": "nodemon -x \"tsc bhaskara.ts || exit 1\" -e .ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/right-align": "^0.1.0",
+    "align-text": "^1.0.2",
     "colors": "^1.4.0",
-    "prompt": "^1.2.0"
+    "enquirer": "^2.3.6"
   },
   "devDependencies": {
+    "@types/align-text": "^1.0.1",
     "@types/node": "^16.11.0"
   }
 }
